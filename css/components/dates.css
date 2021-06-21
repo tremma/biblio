@@ -1,0 +1,132 @@
+.dates {
+  padding-bottom: 50px; }
+  .dates__container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .dates__calendar {
+    padding: 10px 15px;
+    width: 48%;
+    height: 250px;
+    background: linear-gradient(75deg, #30999c, #30989cd8), url(../../img/dates-bg.jpg) center no-repeat;
+    border-radius: 8px; }
+  .dates__title {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase; }
+    .dates__title:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 30%;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #fff, transparent);
+      transform: translateX(-50%); }
+  .dates__list {
+    position: relative;
+    text-align: center;
+    max-height: 140px;
+    overflow: auto; }
+    .dates__list::-webkit-scrollbar {
+      width: 0px; }
+    .dates__list::-webkit-scrollbar-track {
+      background: #fff; }
+    .dates__listwebkit-scrollbar-thumb {
+      background-color: #aaaaaa; }
+  .dates__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0; }
+    .dates__item span.date {
+      display: inline-block;
+      width: 30%;
+      color: #dbd9d9;
+      transition: color 0.2s; }
+    .dates__item a.dates__link {
+      display: block;
+      width: 68%;
+      text-align: left;
+      color: #fff; }
+      .dates__item a.dates__link h5.date-title {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        font-size: 15px;
+        transition: color 0.2s; }
+    .dates__item:hover {
+      cursor: pointer; }
+      .dates__item:hover span.date {
+        color: #fff; }
+      .dates__item:hover a.dates__link h5.date-title {
+        text-decoration: underline; }
+  .dates__books {
+    position: relative;
+    width: 50%;
+    height: 250px;
+    background: #90d9ec;
+    background: linear-gradient(75deg, #90d9ecc9, #90d9ece1), url(../../img/dates-bg.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 8px; }
+    .dates__books .dates__title {
+      margin: 0;
+      color: var(--color-red); }
+    .dates__books .books-slider {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden; }
+      .dates__books .books-slider__slide {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .dates__books .books-slider__slide .picture {
+          margin: 0 25px;
+          width: 150px;
+          height: 100%;
+          flex-shrink: 0;
+          border-radius: 2px;
+          box-shadow: -2px 6px 19px 0px #7f818e;
+          transition: .3s ease;
+          overflow: hidden; }
+          .dates__books .books-slider__slide .picture img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover; }
+        .dates__books .books-slider__slide .info {
+          flex-grow: 1;
+          min-width: 200px; }
+          .dates__books .books-slider__slide .info h3 {
+            display: block;
+            font-size: 18px; }
+          .dates__books .books-slider__slide .info span {
+            display: block;
+            margin-bottom: 10px; }
+          .dates__books .books-slider__slide .info a.btn {
+            padding: 5px 10px;
+            background: #fff;
+            color: #fff;
+            background: #30999c;
+            margin-top: auto; }
+        .dates__books .books-slider__slide:nth-child(2 + n) {
+          background: #edb9d6; }
+      .dates__books .books-slider .swiper-button-prev,
+      .dates__books .books-slider .swiper-button-next {
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border-radius: 50%; }
+        .dates__books .books-slider .swiper-button-prev:after,
+        .dates__books .books-slider .swiper-button-next:after {
+          font-size: 18px;
+          color: var(--color-red); }

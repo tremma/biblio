@@ -1,0 +1,26 @@
+.about__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px; }
+
+.about__text {
+  width: 50%;
+  text-align: center; }
+  .about__text h2.section-title {
+    line-height: 1.5; }
+    .about__text h2.section-title span {
+      display: block;
+      color: var(--color-red); }
+    .about__text h2.section-title:before {
+      content: none; }
+  .about__text p {
+    margin-bottom: 10px; }
+
+.about__photo {
+  width: 50%;
+  height: 100%; }
+  .about__photo img {
+    width: 100%;
+    height: 100%; }
